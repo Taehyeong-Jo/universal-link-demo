@@ -1,7 +1,7 @@
 var express = require('express');
 var server = express();
 
-server.get('/apple-app-site-association', function(request, response) {
+server.get('/.well-known/apple-app-site-association', function(request, response) {
   response.set('Content-Type', 'application/json');
   response.sendFile(__dirname +  '/apple-app-site-association');
 });
