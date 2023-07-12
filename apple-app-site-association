@@ -2,8 +2,20 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["9DL55EF8D3.com.kurly.MarketKurly1", "9DL55EF8D3.com.kurly.MarketKurly1.Beta"],
+        "appIDs": [
+          "9DL55EF8D3.com.kurly.MarketKurly1",
+          "9DL55EF8D3.com.kurly.MarketKurly1.Beta"
+        ],
         "components": [
+          {
+            "/": ""
+          },
+          {
+            "/": "/"
+          },
+          {
+            "/": "/main"
+          },
           {
             "/": "/main/*"
           },
@@ -11,10 +23,21 @@
             "/": "/goods/*"
           },
           {
+            "/": "/*/goods/",
+            "exclude": true
+          },
+          {
+            "/": "/goods/*?contentmode=mobile?",
+            "exclude": true
+          },
+          {
             "/": "/collections/*"
           },
           {
             "/": "/categories/*"
+          },
+          {
+            "/": "/games/*"
           }
         ]
       }
